@@ -31,7 +31,7 @@ namespace RoomToRead
                             $"<div class=\"cover\"><img src='{reader[8]}'>" +
                             $"</div><div class=\"description\"><p class=\"title\">{reader[4]}<br>" +
                             $"<p class=\"parentdiv\"><span class=\"author\">author:{reader[9]}</span></p>" +
-                            $"<p><a href =\"Singlebook.aspx?book_id={reader[0]}\" class=\"btn btn-info\">See More Details</a></p>" +
+                            $"<p><a href =\"Singlebook.aspx?id={reader[0]}\" class=\"btn btn-info\">See More Details</a></p>" +
                             "</div></div>";
                     }
                     Label1.Text += "</div>";

@@ -226,7 +226,7 @@
                         <div class="timeline-image">
                             <h4>
                         
-                        <a href=""> <h2 class="section-heading text-uppercase"  style="color:black">Let's <br />Go </h2></a> 
+                        <a href="Category.aspx"> <h2 class="section-heading text-uppercase"  style="color:black">Let's <br />Go </h2></a> 
                             </h4>
                      
                         </div>

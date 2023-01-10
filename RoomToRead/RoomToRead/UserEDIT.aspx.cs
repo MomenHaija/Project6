@@ -22,8 +22,8 @@ namespace RoomToRead
                 {
                     // Creating Connection  
 
-                    con = new SqlConnection("data source= DESKTOP-8NTQ6AN\\SQLEXPRESS; database=RoomToRead; integrated security=SSPI");
-                    con2 = new SqlConnection("data source= DESKTOP-8NTQ6AN\\SQLEXPRESS; database=RoomToRead; integrated security=SSPI");
+                    con = new SqlConnection("data source= DESKTOP-B9B8CS7; database=RoomToRead; integrated security=SSPI");
+                    con2 = new SqlConnection("data source= DESKTOP-B9B8CS7; database=RoomToRead; integrated security=SSPI");
 
                     // writing sql query  
                     SqlCommand cm = new SqlCommand($"Select * from AspNetUsers  where id = {Session["userId"]}", con);
@@ -119,8 +119,8 @@ namespace RoomToRead
             try
             {
                 // Creating Connection  
-                con = new SqlConnection("data source=DESKTOP-8NTQ6AN\\SQLEXPRESS; database=RoomToRead; integrated security=SSPI");
-                con2 = new SqlConnection("data source=DESKTOP-8NTQ6AN\\SQLEXPRESS; database=RoomToRead; integrated security=SSPI");
+                con = new SqlConnection("data source=DESKTOP-B9B8CS7; database=RoomToRead; integrated security=SSPI");
+                con2 = new SqlConnection("data source=DESKTOP-B9B8CS7; database=RoomToRead; integrated security=SSPI");
                 // writing sql query  
                 string name = TextBox1.Text + " " + TextBox2.Text;
                 SqlCommand cm = null;

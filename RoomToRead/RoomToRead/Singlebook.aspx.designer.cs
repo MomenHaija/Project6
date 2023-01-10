@@ -13,7 +13,7 @@ namespace RoomToRead
 
     public partial class Singlebook
     {
-
+        protected global::System.Web.UI.WebControls.Label Label1;
         /// <summary>
         /// SqlDataSource1 control.
         /// </summary>

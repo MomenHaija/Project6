@@ -55,7 +55,35 @@
         <div class="container1">
            
 <div class="left">
-
+ <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Admin_request.aspx" Text="Category" style="
+    color: white;
+    display: block;
+    margin-top: 83%;
+    margin-left: 29%;
+    font-weight: bold;">Category
+             </asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="Admin_Books.aspx" Text="Books" style="
+    color: white;
+    display: block;
+    margin-top: 20%;
+    margin-left: 29%;
+    font-weight: bold;">Books
+             </asp:HyperLink>
+    
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="Order_Admin.aspx" Text="Orders" style="
+    color: white;
+    display: block;
+    margin-top: 20%;
+    margin-left: 29%;
+    font-weight: bold;">Orders
+             </asp:HyperLink>
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="UsersInadminDashboard.aspx" Text="Users" style="
+    color: white;
+    display: block;
+    margin-top: 20%;
+    margin-left: 29%;
+    font-weight: bold;">Users
+             </asp:HyperLink>
 
 </div>
             <div class="right">

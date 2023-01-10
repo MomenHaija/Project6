@@ -151,6 +151,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".__lists.css" />
     <Content Include="AboutUs.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
@@ -291,6 +292,8 @@
     <Content Include="fonts\icomoon\selection.json" />
     <Content Include="Home.aspx" />
     <Content Include="Images\.DS_Store" />
+    <Content Include="imgg\20.gif" />
+    <Content Include="imgg\45.jpg" />
     <Content Include="img\1.PNG" />
     <Content Include="img\10.PNG" />
     <Content Include="img\2.PNG" />
@@ -324,6 +327,7 @@
     <Content Include="NestedMasterPage1.master" />
     <Content Include="Category.aspx" />
     <Content Include="SingleCategory.aspx" />
+    <Content Include="test.aspx" />
     <Content Include="UsersInadminDashboard.aspx" />
     <Content Include="WebForm3.aspx" />
     <Content Include="WebUserControl1.ascx" />
@@ -846,6 +850,13 @@
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserEDIT.aspx.cs">
       <DependentUpon>UserEDIT.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -905,6 +916,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

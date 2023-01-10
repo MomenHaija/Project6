@@ -32,7 +32,7 @@ namespace RoomToRead
             SqlCommand rolecommand1 = new SqlCommand(query, Con);
             rolecommand1.ExecuteNonQuery();
             Con.Close();
-            Response.Redirect("Order_Admin.aspx");
+            Response.Redirect("Admin_Books.aspx");
 
         }
     }

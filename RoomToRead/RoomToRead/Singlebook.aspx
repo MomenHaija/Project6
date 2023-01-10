@@ -104,7 +104,7 @@
                  <asp:QueryStringParameter Name="book_id" QueryStringField="id" Type="Int32" />
              </SelectParameters>
          </asp:SqlDataSource>
-                                <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
+                                <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1" OnItemCommand="Repeater1_ItemCommand">
 <ItemTemplate>
         <div>
             <div class="container mt-5 mb-5">	
@@ -113,7 +113,7 @@
                         <div class="d-flex flex-column justify-content-center" >	
                             <div class="main_image">	
                          <asp:Image ID="main_product_image" runat="server" ImageUrl='<%#Eval("Book_image")%>' Width="400px" Height="300px" Style="border-radius:7px;margin-left:15%;margin-top:10%;"/>
-
+                       
                             </div>	
 
                         </div>
@@ -136,9 +136,8 @@
                         </div>	
                      
                         <div class="buttons d-flex flex-row mt-5 gap-3">	
-                            <button class="btn btn-outline-dark">Back</button>	
-                            <button class="btn btn-dark">Book Request</button>
-
+                            <button class="btn btn-outline-dark" id="button1" runat="server">Back</button>	
+                            <asp:Button class="btn btn-dark" ID="Button3" OnClick="Button1_Click" runat="server" Text="Book Request" />
 
                         </div>	
                         <div class="search-option">	

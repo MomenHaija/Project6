@@ -25,7 +25,7 @@ namespace RoomToRead
             try
             {
                 // Creating Connection  
-                con = new SqlConnection("data source= DESKTOP-8NTQ6AN\\SQLEXPRESS; database=RoomToRead; integrated security=SSPI");
+                con = new SqlConnection("data source= DESKTOP-B9B8CS7; database=RoomToRead; integrated security=SSPI");
                 // writing sql query  
 
                 DateTime today = DateTime.Now;

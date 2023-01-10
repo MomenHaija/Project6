@@ -19,8 +19,8 @@ namespace RoomToRead
                 try
                 {
                     // Creating Connection  
-                    con = new SqlConnection("data source= DESKTOP-8NTQ6AN\\SQLEXPRESS; database=RoomToRead; integrated security=SSPI");
-                    con2 = new SqlConnection("data source= DESKTOP-8NTQ6AN\\SQLEXPRESS; database=RoomToRead; integrated security=SSPI");
+                    con = new SqlConnection("data source= DESKTOP-B9B8CS7; database=RoomToRead; integrated security=SSPI");
+                    con2 = new SqlConnection("data source= DESKTOP-B9B8CS7; database=RoomToRead; integrated security=SSPI");
 
                     // writing sql query  
                    
@@ -103,7 +103,7 @@ namespace RoomToRead
             //    try
             //    {
             //        // Creating Connection  
-            //        con = new SqlConnection("data source=DESKTOP-8NTQ6AN\\SQLEXPRESS; database=goalProject; integrated security=SSPI");
+            //        con = new SqlConnection("data source=DESKTOP-B9B8CS7; database=goalProject; integrated security=SSPI");
             //        // writing sql query  
             //        string name = TextBox1.Text + " " + TextBox2.Text;
             //        SqlCommand cm = null;
