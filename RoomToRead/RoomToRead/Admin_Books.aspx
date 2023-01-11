@@ -1,16 +1,23 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Admin_Books.aspx.cs" Inherits="RoomToRead.Admin_Books" %>
 
+<%@ Register src="WebUserControl1.ascx" tagname="WebUserControl1" tagprefix="uc1" %>
+<%@ Register src="WebUserControl2.ascx" tagname="WebUserControl2" tagprefix="uc2" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
      <title></title>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-     <script src="Scripts/bootstrap.js"></script>
-    <link href="Content/bootstrap.css" rel="stylesheet" />
+    
    
     
     <style>
+        #GridView2{
+            width:80%;
+            margin-left:auto;
+            margin-right:auto;
+            font-size:1.5rem;
+        }
 .container1{
     position:relative;
 }
@@ -62,42 +69,6 @@ w3-button{
 
              <div class="container1">
            
-<div class="left">
-     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Admin_request.aspx" Text="Category" style="
-    color: white;
-    display: block;
-    margin-top: 83%;
-    margin-left: 29%;
-    font-weight: bold;">Category
-             </asp:HyperLink>
-        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="Admin_Books.aspx" Text="Books" style="
-    color: white;
-    display: block;
-    margin-top: 20%;
-    margin-left: 29%;
-    font-weight: bold;">Books
-             </asp:HyperLink>
-    
-            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="Order_Admin.aspx" Text="Orders" style="
-    color: white;
-    display: block;
-    margin-top: 20%;
-    margin-left: 29%;
-    font-weight: bold;">Orders
-             </asp:HyperLink>
-                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="UsersInadminDashboard.aspx" Text="Users" style="
-    color: white;
-    display: block;
-    margin-top: 20%;
-    margin-left: 29%;
-    font-weight: bold;">Users
-             </asp:HyperLink>
-
-</div>
-                 <div class="right">
-                <h1 style="font-family:'Times New Roman' ; font-style:italic ; color:white ; font-weight:bold; margin-left:39% ; margin-top:5%">Orders</h1>
-            </div>
-
 
            <div class="center"> 
             <div  id="batool" class="table table-striped" style="" >
@@ -162,6 +133,8 @@ w3-button{
 
         </div>
                </div></div>
+        </div>
+        <uc2:WebUserControl2 ID="WebUserControl21" runat="server" />
     </form>
 </body>
 </html>

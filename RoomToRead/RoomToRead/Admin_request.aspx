@@ -1,97 +1,26 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Admin_request.aspx.cs" Inherits="RoomToRead.Admin_request" %>
 
+<%@ Register src="WebUserControl2.ascx" tagname="WebUserControl2" tagprefix="uc1" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <script src="Scripts/bootstrap.js"></script>
-    <link href="Content/bootstrap.css" rel="stylesheet" />
+   
     <title></title>
-    
-    <style>
-.container1{
-    position:relative;
-}
-.left{
-    width:15%;
-    height:700px;
-    background-color:#49796b;
-    position:absolute;
-}
-.right{
-     width:85%;
-    height:150px;
-    background-color:#49796b;
-    position:absolute;
-    float:right;
-    /*border:3px solid black;*/
-    left:15%;
-}
-.center{
-     width:85%;
-    height:940px;
-   /* background-color:gray;*/
-    position:absolute;
-    float:right;
-   /* border:3px solid black;*/
-    left:15%;
-    top:150px;
-    background-color:	#eeeeee;
-   /*background-image: url('img/back1.jpg');*/
-  /* background-repeat:no-repeat;*/
-   /*background-size:contain;*/
-  
 
-}
-        .auto-style1 {
-            margin-bottom: 43;
-        }
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
        
 
         <div>
         </div>
         <div class="container1">
            
-<div class="left">
-     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Admin_request.aspx" Text="Category" style="
-    color: white;
-    display: block;
-    margin-top: 83%;
-    margin-left: 29%;
-    font-weight: bold;">Category
-             </asp:HyperLink>
-        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="Admin_Books.aspx" Text="Books" style="
-    color: white;
-    display: block;
-    margin-top: 20%;
-    margin-left: 29%;
-    font-weight: bold;">Books
-             </asp:HyperLink>
-    
-            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="Order_Admin.aspx" Text="Orders" style="
-    color: white;
-    display: block;
-    margin-top: 20%;
-    margin-left: 29%;
-    font-weight: bold;">Orders
-             </asp:HyperLink>
-                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="UsersInadminDashboard.aspx" Text="Users" style="
-    color: white;
-    display: block;
-    margin-top: 20%;
-    margin-left: 29%;
-    font-weight: bold;">Users
-             </asp:HyperLink>
 
-</div>
-            <div class="right">
-                <h1 style="font-family:'Times New Roman' ; font-style:italic ; color:white ; font-weight:bold; margin-left:39% ; margin-top:5%">Category</h1>
-            </div>
 
 
            <div class="center"> 
@@ -192,7 +121,7 @@
                         <SortedDescendingHeaderStyle BackColor="#15524A" />
                     </asp:GridView>
     
-                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="120" DataKeyNames="category_id" DataSourceID="SqlDataSource1" OnRowUpdating="GridView1_RowUpdating" CellSpacing="100" ForeColor="Black" OnRowDeleting="GridView1_RowDeleting" CssClass="table table-striped"  >
+                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="120" DataKeyNames="category_id" DataSourceID="SqlDataSource1" OnRowUpdating="GridView1_RowUpdating" CellSpacing="100" ForeColor="Black" OnRowDeleting="GridView1_RowDeleting" CssClass="table table-striped" style="margin-right: 148px"  >
                    <Columns> 
                        <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
                        <asp:BoundField DataField="category_description" HeaderText="Category Description" SortExpression="category_description" />
@@ -221,6 +150,10 @@
         </div>
             </div>
         </div>
+        
+  
+
+
     </form>
 </body>
 </html>

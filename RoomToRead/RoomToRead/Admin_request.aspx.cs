@@ -94,5 +94,10 @@ namespace RoomToRead
         {
             GridView1.Visible = false;
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

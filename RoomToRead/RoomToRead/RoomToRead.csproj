@@ -331,6 +331,7 @@
     <Content Include="UsersInadminDashboard.aspx" />
     <Content Include="WebForm3.aspx" />
     <Content Include="WebUserControl1.ascx" />
+    <Content Include="WebUserControl2.ascx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\1.jpg" />
     <Content Include="Images\bg_1.jpg" />
@@ -912,6 +913,13 @@
     </Compile>
     <Compile Include="WebUserControl1.ascx.designer.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebUserControl2.ascx.cs">
+      <DependentUpon>WebUserControl2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUserControl2.ascx.designer.cs">
+      <DependentUpon>WebUserControl2.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

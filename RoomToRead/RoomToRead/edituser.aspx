@@ -1,9 +1,23 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="edituser.aspx.cs" Inherits="RoomToRead.edituser" %>
 
+<%@ Register src="WebUserControl2.ascx" tagname="WebUserControl2" tagprefix="uc1" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+       <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link href="https://Admin.fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="admin/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="admin/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
         <title></title>
     <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
@@ -14,6 +28,9 @@
   <link rel="shortcut icon" href="../../images/favicon.png" />
     
   <style>
+     body{
+         background-color:white;
+     }
             .parentdiv {
         font-size: 24px;
     }
@@ -145,7 +162,7 @@
       .containerdiv{
           display:flex;
           justify-content:center;
-          background-color:white;
+          background-color:#eeeeee;
           align-items:center;
           
           width:50%;
@@ -199,57 +216,24 @@
   
 
 }
+.containerdiv{
+    background-color: #49796b;
+    color: white;
+}
+.center{
+    padding-top:5%;
+}
   </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
                    
-
-        <div>
-        </div>
-        <div class="container1">
-           
-<div class="left">
- <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Admin_request.aspx" Text="Category" style="
-    color: white;
-    display: block;
-    margin-top: 83%;
-    margin-left: 29%;
-    font-weight: bold;">Category
-             </asp:HyperLink>
-        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="Admin_Books.aspx" Text="Books" style="
-    color: white;
-    display: block;
-    margin-top: 20%;
-    margin-left: 29%;
-    font-weight: bold;">Books
-             </asp:HyperLink>
-    
-            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="Order_Admin.aspx" Text="Orders" style="
-    color: white;
-    display: block;
-    margin-top: 20%;
-    margin-left: 29%;
-    font-weight: bold;">Orders
-             </asp:HyperLink>
-                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="UsersInadminDashboard.aspx" Text="Users" style="
-    color: white;
-    display: block;
-    margin-top: 20%;
-    margin-left: 29%;
-    font-weight: bold;">Users
-             </asp:HyperLink>
-
-</div>
-            <div class="right">
-                <h1 style="font-family:'Times New Roman' ; font-style:italic ; color:white ; font-weight:bold; margin-left:39% ; margin-top:5%">Orders</h1>
-            </div>
+                    <uc1:WebUserControl2 ID="WebUserControl21" runat="server" />
 
 
-           <div class="center"> 
-            <div  id="batool" class="table table-striped" >
-            <div>
+
+                     
                         <div class="containerdiv">
 <div class="containertable form-group">
     <table>
@@ -345,11 +329,12 @@
     </div>
     </div>
      </div>
-         </div>
-        </div>
-               </div>
             </div>
-            </div>
+        
+        
+    
     </form>
+
+
 </body>
 </html>

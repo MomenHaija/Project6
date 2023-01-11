@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UsersInadminDashboard.aspx.cs" Inherits="RoomToRead.UsersInadminDashboard" %>
 
+<%@ Register src="WebUserControl2.ascx" tagname="WebUserControl2" tagprefix="uc1" %>
+
 <!DOCTYPE html>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.css">
@@ -70,41 +72,7 @@
         </div>
         <div class="container1">
            
-<div class="left">
- <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Admin_request.aspx" Text="Category" style="
-    color: white;
-    display: block;
-    margin-top: 83%;
-    margin-left: 29%;
-    font-weight: bold;">Category
-             </asp:HyperLink>
-        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="Admin_Books.aspx" Text="Books" style="
-    color: white;
-    display: block;
-    margin-top: 20%;
-    margin-left: 29%;
-    font-weight: bold;">Books
-             </asp:HyperLink>
-    
-            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="Order_Admin.aspx" Text="Orders" style="
-    color: white;
-    display: block;
-    margin-top: 20%;
-    margin-left: 29%;
-    font-weight: bold;">Orders
-             </asp:HyperLink>
-                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="UsersInadminDashboard.aspx" Text="Users" style="
-    color: white;
-    display: block;
-    margin-top: 20%;
-    margin-left: 29%;
-    font-weight: bold;">Users
-             </asp:HyperLink>
 
-</div>
-            <div class="right">
-                <h1 style="font-family:'Times New Roman' ; font-style:italic ; color:white ; font-weight:bold; margin-left:39% ; margin-top:5%">Orders</h1>
-            </div>
 
 
            <div class="center"> 
@@ -127,7 +95,8 @@ join city As C on U.city_id=C.city_id where A.id=2;
         <asp:MultiView ID="MultiView2" runat="server" ActiveViewIndex="1">
             <asp:View ID="View3" runat="server">
                 <div class="auto-style1">
-                    <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource2" OnSelectedIndexChanged="GridView4_SelectedIndexChanged" cssClass="table table-responsive table-hover table-striped">
+                    <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource2" OnSelectedIndexChanged="GridView4_SelectedIndexChanged" cssClass="table table-responsive table-hover table-striped" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
+                        <AlternatingRowStyle BackColor="#CCCCCC" />
                         <Columns   >
                             <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                             <asp:BoundField DataField="firstname" HeaderText="First Name" SortExpression="firstname" />
@@ -147,11 +116,20 @@ join city As C on U.city_id=C.city_id where A.id=2;
                             <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="deleteuseradmin?id={0}" Text="Delete" HeaderText="Delete" />
                             <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="edituser?id={0}" Text="Edit" HeaderText="Edit" />
                         </Columns>
+                        <FooterStyle BackColor="#CCCCCC" />
+                        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                        <SortedAscendingHeaderStyle BackColor="#808080" />
+                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                        <SortedDescendingHeaderStyle BackColor="#383838" />
                     </asp:GridView>
                 </div>
             </asp:View>
             <asp:View ID="View2" runat="server">
-                <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView4_SelectedIndexChanged" cssClass="table table-responsive table-hover table-striped">
+                <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView4_SelectedIndexChanged" cssClass="table table-responsive table-hover table-striped" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
+                    <AlternatingRowStyle BackColor="#CCCCCC" />
                     <Columns>
                         <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                         <asp:BoundField DataField="firstname" HeaderText="First Name" SortExpression="firstname" />
@@ -171,12 +149,22 @@ join city As C on U.city_id=C.city_id where A.id=2;
                         <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="deleteuseradmin?id={0}" Text="Delete" HeaderText="Delete" />
                         <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="edituser?id={0}" Text="Edit" HeaderText="Edit" />
                     </Columns>
+                    <FooterStyle BackColor="#CCCCCC" />
+                    <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                    <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                    <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                    <SortedAscendingHeaderStyle BackColor="#808080" />
+                    <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                    <SortedDescendingHeaderStyle BackColor="#383838" />
                 </asp:GridView>
             </asp:View>
         </asp:MultiView>
     </div>
                </div>
             </div>
+        
+                <uc1:WebUserControl2 ID="WebUserControl21" runat="server" />
         
                 </form>
 </body>
